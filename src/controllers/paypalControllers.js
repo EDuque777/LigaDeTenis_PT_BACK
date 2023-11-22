@@ -101,7 +101,7 @@ const captureOrder = async (req, res) => {
           }
 
           // res.redirect(`http://localhost:3000/homePage/tournaments/${info.idTournament}`);
-          res.redirect(`https://ligadetenisptback-dev-jpef.4.us-1.fl0.io/homePage/tournaments/${info.idTournament}`);
+          res.redirect(`https://liga-de-tenis-pt-front.vercel.app/homePage/tournaments/${info.idTournament}`);
 
         } catch (error) {
           res.status(500).send(error.message);
@@ -112,7 +112,7 @@ const captureOrder = async (req, res) => {
 
 const cancelOrder = (req, res) => {
     // res.redirect(`http://localhost:3000/homePage/tournaments/${info.idTournament}`);
-    res.redirect(`https://ligadetenisptback-dev-jpef.4.us-1.fl0.io/homePage/tournaments/${info.idTournament}`);
+    res.redirect(`https://liga-de-tenis-pt-front.vercel.app/homePage/tournaments/${info.idTournament}`);
 };
 
 
