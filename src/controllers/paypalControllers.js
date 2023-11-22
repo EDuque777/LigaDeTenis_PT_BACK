@@ -24,8 +24,10 @@ const createOrder = async (req, res) => {
           brand_name: "Tennis League",
           landing_page: "NO_PREFERENCE",
           user_action: "PAY_NOW",
-          return_url: "http://[::1]:3001/captureOrder",
-          cancel_url: "http://[::1]:3001/cancelOrder",
+          // return_url: "http://[::1]:3001/captureOrder",
+          // cancel_url: "http://[::1]:3001/cancelOrder",
+          return_url: "https://ligadetenisptback-dev-jpef.4.us-1.fl0.io/captureOrder",
+          cancel_url: "https://ligadetenisptback-dev-jpef.4.us-1.fl0.io/cancelOrder",
         },
       };
   
@@ -98,7 +100,8 @@ const captureOrder = async (req, res) => {
             }
           }
 
-          res.redirect(`http://localhost:3000/homePage/tournaments/${info.idTournament}`);
+          // res.redirect(`http://localhost:3000/homePage/tournaments/${info.idTournament}`);
+          res.redirect(`https://ligadetenisptback-dev-jpef.4.us-1.fl0.io/homePage/tournaments/${info.idTournament}`);
 
         } catch (error) {
           res.status(500).send(error.message);
@@ -108,7 +111,8 @@ const captureOrder = async (req, res) => {
 
 
 const cancelOrder = (req, res) => {
-    res.redirect(`http://localhost:3000/homePage/tournaments/${info.idTournament}`);
+    // res.redirect(`http://localhost:3000/homePage/tournaments/${info.idTournament}`);
+    res.redirect(`https://ligadetenisptback-dev-jpef.4.us-1.fl0.io/homePage/tournaments/${info.idTournament}`);
 };
 
 
