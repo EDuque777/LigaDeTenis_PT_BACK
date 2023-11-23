@@ -2,7 +2,7 @@ require('dotenv').config();
 const { User } = require("../db")
 const transporter = require('../middlewares/nodemailer')
 const bcrypt = require("bcryptjs")
-
+// const { createAccessToken } = require("../middlewares/jwt.js")
 const {
     CLOUD_DEFAUL_IMAGE,
 } = process.env;
@@ -62,7 +62,9 @@ const createUser = async (req, res) => {
                     <p>Get ready to live the passion of tennis!</p>`
         })
     
-
+        // const token = await createAccessToken({id : createUser.id})
+    
+        // res.cookie("token", token)
         res.status(200).json({ message: "User Created Successfully"});
 
     } catch (error) {

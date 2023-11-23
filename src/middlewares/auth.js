@@ -4,6 +4,7 @@ const { JWT_SECRET } = process.env
 
 const isAuthenticated = (req, res, next) => {
     const token = req.cookies.token
+    // console.log(token);
     if (!token) {
       res.status(401).send("You must be logged in to use this route")
     } else {

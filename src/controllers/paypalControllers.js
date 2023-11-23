@@ -100,7 +100,7 @@ const captureOrder = async (req, res) => {
             }
           }
 
-          
+          // res.redirect(`http://localhost:3000/homePage/tournaments/${info.idTournament}`);
           res.redirect(`https://liga-de-tenis-pt-front.vercel.app/homePage/tournaments/${info.idTournament}`);
 
         } catch (error) {
@@ -111,7 +111,7 @@ const captureOrder = async (req, res) => {
 
 
 const cancelOrder = (req, res) => {
-    
+    // res.redirect(`http://localhost:3000/homePage/tournaments/${info.idTournament}`);
     res.redirect(`https://liga-de-tenis-pt-front.vercel.app/homePage/tournaments/${info.idTournament}`);
 };
 

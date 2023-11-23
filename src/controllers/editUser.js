@@ -1,5 +1,6 @@
 const { User } = require("../db")
 const bcrypt = require("bcryptjs")
+// const { createAccessToken } = require("../middlewares/jwt.js")
 
 
 const editUser = async (req, res) => {
@@ -48,6 +49,9 @@ const editUser = async (req, res) => {
             { where: { id } }
         );
 
+        // const token = await createAccessToken({ id });
+    
+        // res.cookie("token", token)
         res.status(200).json({ message: "User updated successfully" });
 
     } catch (error) {
