@@ -26,8 +26,8 @@ const createOrder = async (req, res) => {
           user_action: "PAY_NOW",
           // return_url: "http://[::1]:3001/captureOrder",
           // cancel_url: "http://[::1]:3001/cancelOrder",
-          return_url: "https://ligadetenisptback-dev-jpef.4.us-1.fl0.io/captureOrder",
-          cancel_url: "https://ligadetenisptback-dev-jpef.4.us-1.fl0.io/cancelOrder",
+          return_url: "https://ligadetenisptback-dev-mjcc.4.us-1.fl0.io/captureOrder",
+          cancel_url: "https://ligadetenisptback-dev-mjcc.4.us-1.fl0.io/cancelOrder",
         },
       };
   
