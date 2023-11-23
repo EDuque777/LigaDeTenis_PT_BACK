@@ -48,15 +48,6 @@ let capsEntries = entries.map((entry) => [entry[0][0].toUpperCase() + entry[0].s
 sequelize.models = Object.fromEntries(capsEntries);
 
 
-// const { User, Pixel, Message } = sequelize.models;
-
-// Usuario.belongsToMany(Pixel, {through: "Usuarios_Pixels"} )
-// Pixel.belongsToMany(Usuario, {through: "Usuarios_Pixels"} )
-
-// Usuario.belongsToMany(Message, {through: "Usuarios_Messages"})
-// Message.belongsToMany(Usuario, {through: "Usuarios_Messages"})
-
-
 module.exports = {
   ...sequelize.models, 
   conn: sequelize,     
